@@ -1,13 +1,14 @@
-const displayedImage = document.querySelector('.displayed-img');
-const thumbBar = document.querySelector('.thumb-bar');
+const displayedImage = document.querySelector(".displayed-img");
+const thumbBar = document.querySelector(".thumb-bar");
 
-const btn = document.querySelector('button');
-const overlay = document.querySelector('.overlay');
+const btn = document.querySelector("button");
+const overlay = document.querySelector(".overlay");
 
-/* Looping through images */
+const images = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"];
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-thumbBar.appendChild(newImage);
-
-/* Wiring up the Darken/Lighten button */
+for (var i = 0; i < images.length; i++) {
+  console.log(images[i]);
+  const newImage = document.createElement("img");
+  newImage.setAttribute("src", "images/" + images[i]);
+  thumbBar.appendChild(newImage);
+}
